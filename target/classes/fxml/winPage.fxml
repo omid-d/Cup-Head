@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.WinController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../css/style.css" fx:id="border">
+    <top>
+        <GridPane fx:id="grid" alignment="CENTER">
+
+        </GridPane>
+
+    </top>
+
+    <center>
+
+        <VBox spacing="10" alignment="CENTER" maxWidth="350" fx:id="vbox">
+            <Text id="title" text="You Won!" styleClass="title"/>
+            <Button  styleClass="primary-btn" text="Restart" onMouseClicked="#restart"/>
+            <Button  styleClass="secondary-btn" text="Go to main menu" onMouseClicked="#goToMainMenu"/>
+        </VBox>
+
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/style.css" />
+    </stylesheets>
+</BorderPane>

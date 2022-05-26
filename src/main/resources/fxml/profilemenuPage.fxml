@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.ProfileController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../css/style.css" fx:id="border">
+<top>
+    <GridPane fx:id="grid" alignment="CENTER">
+
+    </GridPane>
+
+</top>
+
+<center>
+
+    <VBox spacing="10" alignment="CENTER" maxWidth="500" fx:id="vbox">
+        <Text id="title" text="Profile" styleClass="title"/>
+        <VBox spacing="10" alignment="CENTER" maxWidth="500" fx:id="vbox1">
+
+        </VBox>
+        <Label text="Change Username"/>
+        <TextField fx:id="username" promptText="enter your new username" />
+        <Button fx:id="changeUsername" styleClass="secondary-btn" text="change username" onMouseClicked="#changeUsername" />
+        <Label text="Change Password"/>
+        <TextField fx:id="password" promptText="enter your new password" onKeyTyped="#type"/>
+        <Button fx:id="changePassword" styleClass="secondary-btn" text="change password" onMouseClicked="#changePassword"/>
+        <Button  styleClass="secondary-btn" text="delete account" onMouseClicked="#deleteAccount"/>
+        <Button  styleClass="secondary-btn" text="sign out" onMouseClicked="#exitAccount"/>
+        <Button  styleClass="secondary-btn" text="go back" onMouseClicked="#goBack"/>
+    </VBox>
+
+</center>
+
+    <stylesheets>
+        <URL value="@../css/style.css" />
+    </stylesheets>
+</BorderPane>

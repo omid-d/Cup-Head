@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.LoginPageController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../css/style.css" fx:id="border">
+<top>
+    <GridPane fx:id="grid" alignment="CENTER">
+
+    </GridPane>
+
+</top>
+
+<center>
+
+    <VBox spacing="10" alignment="CENTER" maxWidth="350" fx:id="vbox">
+        <Text id="title" text="Welcome to CupHead game!" styleClass="title"/>
+        <Label text="Username"/>
+        <TextField fx:id="username" promptText="enter your username" />
+        <Label text="Password"/>
+        <TextField fx:id="password" promptText="enter your password" onKeyTyped="#type"/>
+        <Button fx:id="loginButton" styleClass="primary-btn" text="Login" onMouseClicked="#login"/>
+        <Button fx:id="registerButton" styleClass="secondary-btn" text="Register" onMouseClicked="#register"/>
+        <Button  styleClass="secondary-btn" text="Guest Mode" onMouseClicked="#loginAsGuest"/>
+    </VBox>
+
+</center>
+
+    <stylesheets>
+        <URL value="@../css/style.css" />
+    </stylesheets>
+</BorderPane>

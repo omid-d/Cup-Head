@@ -1,0 +1,81 @@
+
+Button {
+    -fx-pref-width: 330;
+    -fx-pref-height: 35;
+    -fx-border-radius: 5;
+    -fx-background-color: none;
+}
+
+.button1 {
+    -fx-pref-width: 70;
+    -fx-pref-height: 35;
+    -fx-border-radius: 5;
+    -fx-background-color: green;
+}
+
+TextField{
+    -fx-max-width: 330;
+    -fx-pref-height: 35;
+    -fx-border-radius: 5;
+    -fx-background-color: white;
+}
+
+label{
+    -fx-text-fill: #626C8F;
+}
+
+.primary-btn{
+    -fx-background-color: #4164E2;
+    -fx-text-fill: white;
+}
+
+.secondary-btn{
+
+    -fx-border-width: 1;
+    -fx-border-color: #4164E2;
+    -fx-text-fill: #4164E2;
+}
+
+.title{
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+
+.score{
+    -fx-font-size: 20;
+    -fx-font-weight: none;
+}
+
+.title1{
+    -fx-font-size: 20;
+}
+
+.board {
+    -fx-fill: #adff2f;
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}
+
+.board1 {
+    -fx-fill: #ff0000;
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}
+
+.boardBoss {
+    -fx-fill: #dc143c;
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}
+
+#hello{
+    -fx-font-size: 50;
+    -fx-font-weight: bold;
+    -fx-text-color: #4164E2;
+}
+
+.health{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
